@@ -10,6 +10,17 @@ https://cdn.jsdelivr.net/gh/Sislecv/picbed@main/images/2026/08/example.png
 
 ## 使用方式
 
+### 网页上传（推荐）
+
+本机起一个零依赖的上传服务，浏览器（或手机/局域网）拖拽上传：
+
+```bash
+upimg-web              # 启动 http://0.0.0.0:8899
+upimg-web 9000         # 自定义端口
+```
+
+浏览器打开 `http://localhost:8899`，拖拽或点击选择图片（支持多选），自动上传并返回 CDN 链接与 Markdown 格式，一键复制。代码在 `~/upimg-web/`（Python 标准库，无第三方依赖）。
+
 ### 命令行（upimg）
 
 ```bash
